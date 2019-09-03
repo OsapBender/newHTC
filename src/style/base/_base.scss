@@ -1,0 +1,61 @@
+body {
+  background-color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 486px;
+  margin: 15% auto 0;
+  position: relative;
+}
+
+.tab-panel {
+  box-sizing: border-box;
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  max-width: 486px;
+  min-height: 280px;
+  padding: 15px;
+  border-radius: 0 5px 5px 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.tab-panel.active {
+  display: flex;
+}
+
+.simplebar-scrollbar {
+  right: 0 !important;
+  width: 4px !important;
+  height: 70px !important;
+  background-color: #1575b1 !important;
+  border-radius: 5px !important;
+}
+
+.simplebar-vertical {
+  width: 4px !important;
+  border-radius: 5px !important;
+  background-color: #ededed !important;
+
+}
+
+.simplebar-scrollbar:before {
+  background-color: #1575b1 !important;
+}
+
+input[type="email"] {
+  color: #1474ae;
+  text-decoration: underline;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
