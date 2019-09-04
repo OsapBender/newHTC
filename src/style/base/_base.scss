@@ -52,6 +52,9 @@ input[type="email"] {
   text-decoration: underline;
 }
 
+input[type='number'] {
+  -moz-appearance:textfield;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
