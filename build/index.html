@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <title>Тестовое задание</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Put your description here">
+    <meta name="keywords" content="HTC">
+    <meta name="author" content="Ivan Chuvashov">
     <link
             rel=" stylesheet "
             href=" https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css "
@@ -30,200 +30,203 @@
     </ul>
 
     <!-- РАЗДЕЛ ПРОФИЛЯ -->
-
-    <div class="tab-panel active tab-1">
-        <div class="page-photo">
-            <div class="page-photo__avatar"></div>
-            <button class="page-photo__add-friend" type="button" name="button" aria-label="Добавить в друзья">
-                Добавить в друзья
-            </button>
-        </div>
-        <div class="page-info-wrap">
-            <form class="page-info-wrap__form-info" action="index.html" method="post">
-                <input type="text" class="page-info-wrap__name" id="name" value=""
-                       placeholder="Ваше имя?">
-                <input type="text" class="page-info-wrap__city" id="my-city-id" value=""
-                       placeholder="Ваше место проживания?">
-
-                <div class="page-info-wrap__field-info">
-                    <label for="family-status" class="page-info-wrap__description">Семейное положение </label>
-
-                    <input type="text" class="page-info-wrap__contact"
-                           id="family-status"  value="" placeholder="Семейное положение?">
-                </div>
-                <div class="page-info-wrap__field-info">
-                    <label for="Number" class="page-info-wrap__description">Телефон </label>
-
-                    <input type="number" class="page-info-wrap__contact"
-                           id="Number"  value="" placeholder="Ваш номер телефона?">
-                </div>
-                <div class="page-info-wrap__field-info">
-                    <label for="e-mail" class="page-info-wrap__description">E-mail </label>
-
-                    <input type="email" class="page-info-wrap__contact"
-                           id="e-mail" value="" placeholder="Ваша почта?">
-                </div>
-                <div class="page-info-wrap__field-info page-info-wrap__hobbies-field">
-                    <label for="hobbies" class="page-info-wrap__description">Интересы </label>
-
-                    <input type="text" class="page-info-wrap__contact page-info-wrap__hobbies-input"
-                           id="hobbies" maxlength='20' placeholder="Ваши интересы?" value="">
-                    <button type="button" id="btn-add-hobbies" class="page-info-wrap__add-hobbies" name="button">
-                        Добавить
-                    </button>
-                </div>
-                <ul class="page-info-wrap__hobbies-list">
-                </ul>
-            </form>
-        </div>
-    </div>
-
-    <!--РАЗДЕЛ ДРУЗЕЙ-->
-
-    <div class="tab-panel tab-2">
-
-        <div class="friends-wrap" data-simplebar>
-
-            <!-- ПЕРВАЯ ПАРА -->
-
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend1.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Лев Бронштейн</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status">Online</span>
-                    </div>
-                </div>
-
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend2.jpeg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Находка Капитал</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status"></span>
-                    </div>
-                </div>
-
+    <main>
+        <div class="tab-panel active tab-1">
+            <div class="page-photo">
+                <div class="page-photo__avatar"></div>
+                <button class="page-photo__add-friend" type="button" name="button" aria-label="Добавить в друзья">
+                    Добавить в друзья
+                </button>
             </div>
+            <div class="page-info-wrap">
+                <form class="page-info-wrap__form-info" action="index.html" method="post">
+                    <label aria-label="user-name"><input type="text" class="page-info-wrap__name" id="name" value=""
+                                                         placeholder="Ваше имя?"></label>
+                    <label aria-label="user-city"><input type="text" class="page-info-wrap__city" id="my-city-id"
+                                                         value=""
+                                                         placeholder="Ваше место проживания?"></label>
 
-            <!-- ВТОРАЯ ПАРА -->
+                    <div class="page-info-wrap__field-info">
+                        <label for="family-status" class="page-info-wrap__description">Семейное положение </label>
 
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend3.jpeg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Яндекс Петренко</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status"></span>
+                        <input type="text" class="page-info-wrap__contact"
+                               id="family-status" value="" placeholder="Семейное положение?">
                     </div>
-                </div>
+                    <div class="page-info-wrap__field-info">
+                        <label for="Number" class="page-info-wrap__description">Телефон </label>
 
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend4.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Успех Возможностей</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status">Online</span>
+                        <input type="number" class="page-info-wrap__contact"
+                               id="Number" value="" placeholder="Ваш номер телефона?">
                     </div>
-                </div>
+                    <div class="page-info-wrap__field-info">
+                        <label for="e-mail" class="page-info-wrap__description">E-mail </label>
 
-            </div>
-
-            <!-- ТРЕТЬЯ ПАРА -->
-
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend5.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Инна Нашлась</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status">Online</span>
+                        <input type="email" class="page-info-wrap__contact"
+                               id="e-mail" value="" placeholder="Ваша почта?">
                     </div>
-                </div>
+                    <div class="page-info-wrap__field-info page-info-wrap__hobbies-field">
+                        <label for="hobbies" class="page-info-wrap__description">Интересы </label>
 
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend6.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Алла Подольская</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status">Online</span>
+                        <input type="text" class="page-info-wrap__contact page-info-wrap__hobbies-input"
+                               id="hobbies" maxlength='20' placeholder="Ваши интересы?" value="">
+                        <button type="button" id="btn-add-hobbies" class="page-info-wrap__add-hobbies" name="button">
+                            Добавить
+                        </button>
                     </div>
-                </div>
-
-            </div>
-
-            <!-- ЧЕТВЕРТАЯ ПАРА -->
-
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend7.jpeg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Лев Бронштейн</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status">Online</span>
-                    </div>
-                </div>
-
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend8.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Находка Капитал</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status"></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ПЯТАЯ ПАРА -->
-
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend9.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Лев Бронштейн</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status">Online</span>
-                    </div>
-                </div>
-
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend10.png" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Находка Капитал</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status"></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ШЕСТАЯ ПАРА -->
-
-            <div class="friends-row">
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend11.jpeg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Лев Бронштейн</a>
-                        <span class="friends-row__city">г. Ханты-Мансийск</span>
-                        <span class="friends-row__status">Online</span>
-                    </div>
-                </div>
-
-                <div class="friends-row__user">
-                    <img class="friends-row__avatar" src="img/friends/friend12.jpg" alt="avatar">
-                    <div class="friends-row__info">
-                        <a href="" class="friends-row__link">Находка Капитал</a>
-                        <span class="friends-row__city">г. Усть-Бельск</span>
-                        <span class="friends-row__status"></span>
-                    </div>
-                </div>
-
+                    <ul class="page-info-wrap__hobbies-list">
+                    </ul>
+                </form>
             </div>
         </div>
-    </div>
+
+        <!--РАЗДЕЛ ДРУЗЕЙ-->
+
+        <div class="tab-panel tab-2">
+
+            <div class="friends-wrap" data-simplebar>
+
+                <!-- ПЕРВАЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend1.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Лев Бронштейн</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend2.jpeg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Находка Капитал</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ВТОРАЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend3.jpeg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Яндекс Петренко</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status"></span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend4.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Успех Возможностей</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ТРЕТЬЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend5.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Инна Нашлась</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend6.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Алла Подольская</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ЧЕТВЕРТАЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend7.jpeg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Лев Бронштейн</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend8.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Находка Капитал</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ПЯТАЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend9.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Лев Бронштейн</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend10.png" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Находка Капитал</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ШЕСТАЯ ПАРА -->
+
+                <div class="friends-row">
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend11.jpeg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Лев Бронштейн</a>
+                            <span class="friends-row__city">г. Ханты-Мансийск</span>
+                            <span class="friends-row__status">Online</span>
+                        </div>
+                    </div>
+
+                    <div class="friends-row__user">
+                        <img class="friends-row__avatar" src="img/friends/friend12.jpg" alt="avatar">
+                        <div class="friends-row__info">
+                            <a href="" class="friends-row__link">Находка Капитал</a>
+                            <span class="friends-row__city">г. Усть-Бельск</span>
+                            <span class="friends-row__status"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
+
 <script src="js/main.min.js"></script>
 </body>
 
